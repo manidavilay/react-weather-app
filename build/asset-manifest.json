@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03bb0105.css",
+    "main.js": "/static/js/main.fe51391e.js",
+    "static/js/787.b30f2593.chunk.js": "/static/js/787.b30f2593.chunk.js",
+    "static/media/sandy-night.jpg": "/static/media/sandy-night.ea6c87f1366563cbeaa9.jpg",
+    "static/media/tornado-night.jpg": "/static/media/tornado-night.02c91ae5268950930e54.jpg",
+    "static/media/tornado-day.jpg": "/static/media/tornado-day.8e5b230cde6add58947a.jpg",
+    "static/media/sandy-day.jpg": "/static/media/sandy-day.791ad8ba0ce78fb90ad2.jpg",
+    "static/media/stormy-night.jpg": "/static/media/stormy-night.d618aa58e0a755f51a33.jpg",
+    "static/media/snowy-day.jpg": "/static/media/snowy-day.747f67acfff7616cd11c.jpg",
+    "static/media/stormy-day.jpg": "/static/media/stormy-day.4c407c214125e00fe44f.jpg",
+    "static/media/snowy-night.jpg": "/static/media/snowy-night.6fc0653fb9068580aabc.jpg",
+    "static/media/dusty-night.jpg": "/static/media/dusty-night.e279f6e7fe59968fe020.jpg",
+    "static/media/dusty-day.jpg": "/static/media/dusty-day.34facf47d5817204cd80.jpg",
+    "static/media/clear-day.jpg": "/static/media/clear-day.0d04be18c973fc5edd02.jpg",
+    "static/media/rainy-day.jpg": "/static/media/rainy-day.9bcc0763edb1f0394fd2.jpg",
+    "static/media/rainy-night.jpg": "/static/media/rainy-night.b6f4b949bfeb9fa6ee9b.jpg",
+    "static/media/drizzly-day.jpg": "/static/media/drizzly-day.247c98ba9e80ad22afd8.jpg",
+    "static/media/cloudy-day.jpg": "/static/media/cloudy-day.982f52a299a6a21e726f.jpg",
+    "static/media/drizzly-night.jpg": "/static/media/drizzly-night.52df207d76c5fbd1f6f7.jpg",
+    "static/media/clear-night.jpg": "/static/media/clear-night.53118d688a6f0af66160.jpg",
+    "static/media/misty-day.jpg": "/static/media/misty-day.81af70b5ad9ad61dbb3d.jpg",
+    "static/media/cloudy-night.jpg": "/static/media/cloudy-night.c756c564e511122593a6.jpg",
+    "static/media/misty-night.jpg": "/static/media/misty-night.0485a66cdfde0d0790e3.jpg",
+    "static/media/none.jpg": "/static/media/none.6f73c29d7e533934e8af.jpg",
+    "index.html": "/index.html",
+    "main.03bb0105.css.map": "/static/css/main.03bb0105.css.map",
+    "main.fe51391e.js.map": "/static/js/main.fe51391e.js.map",
+    "787.b30f2593.chunk.js.map": "/static/js/787.b30f2593.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03bb0105.css",
+    "static/js/main.fe51391e.js"
+  ]
+}
