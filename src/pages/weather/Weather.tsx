@@ -5,6 +5,7 @@ import { IWeather } from "../../utils/interfaces";
 import Search from "../../components/search/Search";
 import Location from "../../components/location/Location";
 import Current from "../../components/current/Current";
+import Informations from "../../components/informations/Informations";
 
 const Weather = () => {
   const [query, setQuery] = useState<string>("");
@@ -40,6 +41,7 @@ const Weather = () => {
             <>
               <Location isWeatherFetched={isWeatherFetched} weather={weather} />
               <Current date={date} completeHour={completeHour} />
+              <Informations isWeatherFetched={isWeatherFetched} weather={weather} />
             </>
           )}
     </div>
