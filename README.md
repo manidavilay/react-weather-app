@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Weather App Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project (made in React / TypeScript as a training project) is using OpenWeather API to fetch different weather forecasts all around, the local time and date.
 
-## Available Scripts
+## Libraries used
 
-In the project directory, you can run:
+- Axios
+- Icons: React Icons
 
 ### `npm start`
 
@@ -39,8 +40,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Add sass to project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `npm i -D node-sass`
+### `npm i -D @types/node-sass`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Next we create our .scss files in each of our component (one scss file for each component). Then we import our .scss file in our .tsx file.
+
+### `npm i -D npm-run-all`
