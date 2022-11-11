@@ -3,6 +3,7 @@ import { fetchWeather } from "../../services/api";
 import { dateBuilder, getLocationTime } from "../../utils/functions";
 import { IWeather } from "../../utils/interfaces";
 import Search from "../../components/search/Search";
+import Location from "../../components/location/Location";
 import Current from "../../components/current/Current";
 
 const Weather = () => {
@@ -33,7 +34,14 @@ const Weather = () => {
   return (
     <div>
       <Search updateWeather={updateWeather} query={query} setQuery={setQuery} />
-      <Current date={date} completeHour={completeHour} />
+      {error ? (
+            <p className="text">City not found, please try again</p>
+          ) : (
+            <>
+              <Location isWeatherFetched={isWeatherFetched} weather={weather} />
+              <Current date={date} completeHour={completeHour} />
+            </>
+          )}
     </div>
   );
 };
