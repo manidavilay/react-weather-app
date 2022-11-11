@@ -1,5 +1,5 @@
 import axios from "axios";
-import { api } from "../services/apiKey";
+import { api } from "./key";
 
 // Fetch weather API
 export const fetchWeather = (query: string, setError: React.Dispatch<React.SetStateAction<string>>) => {
