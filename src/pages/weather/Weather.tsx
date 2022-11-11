@@ -57,16 +57,28 @@ const Weather = () => {
           : "weather-page none"
       }
     >
-      <Search updateWeather={updateWeather} query={query} setQuery={setQuery} />
-      {error ? (
-        <p className="text">City not found, please try again</p>
-      ) : (
-        <>
-          <Location isWeatherFetched={isWeatherFetched} weather={weather} />
-          <Current date={date} completeHour={completeHour} />
-          <Informations isWeatherFetched={isWeatherFetched} weather={weather} />
-        </>
-      )}
+      <div className="weather-page__main">
+        <div className="weather-page__container">
+          <h1 className="title">Weather App</h1>
+          <Search
+            updateWeather={updateWeather}
+            query={query}
+            setQuery={setQuery}
+          />
+          {error ? (
+            <p className="text">City not found, please try again</p>
+          ) : (
+            <>
+              <Location isWeatherFetched={isWeatherFetched} weather={weather} />
+              <Current date={date} completeHour={completeHour} />
+              <Informations
+                isWeatherFetched={isWeatherFetched}
+                weather={weather}
+              />
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

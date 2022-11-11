@@ -1,0 +1,16 @@
+/* -------------------------------- */
+/*            ERROR PAGE            *
+/* -------------------------------- */
+
+.error-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/images/none.jpg");
+    background-size: cover;
+
+    &__container {
+        width: 85%;
+        margin: auto;
+        padding: 100px 0 0 0;
+    }
+}
