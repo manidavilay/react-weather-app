@@ -1,0 +1,25 @@
+/* -------------------------------- */
+/*              LOCATION            *
+/* -------------------------------- */
+
+@import "../../assets/styles/utils/variables.scss";
+@import "../../assets/styles/utils/mixins.scss";
+
+.location {
+    margin: 0 0 20px 0;
+    color: $color-white;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 3px 3px $color-dark;
+
+    @include mobile {
+        margin: 0 0 15px 0;
+        font-size: 30px;
+    }
+
+    @include small-mobile {
+        margin: 0 0 10px 0;
+        font-size: 25px;
+    }
+}

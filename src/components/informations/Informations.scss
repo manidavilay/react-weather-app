@@ -1,0 +1,84 @@
+/* -------------------------------- */
+/*               WEATHER            *
+/* -------------------------------- */
+
+@import "../../assets/styles/utils/variables.scss";
+@import "../../assets/styles/utils/mixins.scss";
+
+.weather {
+    &__container {
+        width: 300px;
+        margin: auto;
+        padding: 20px 25px;
+        background-color: $color-grey;
+        border-radius: 16px;
+        box-shadow: 5px 8px $color-dark-darker;
+        text-align: center;
+
+        @include mobile {
+            width: 100%;
+            max-width: 300px; 
+        }
+    }
+
+    &__main {
+        color: $color-white;
+        font-size: 50px;
+        font-weight: 700;
+        text-shadow: 3px 6px $color-dark;
+
+        @include mobile {
+            font-size: 40px;
+        }
+
+        @include small-mobile {
+            font-size: 30px;
+            text-shadow: 3px 3px $color-dark;
+        }
+    }
+
+    &__informations {
+        margin: 5px 0;
+        color: $color-white;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        text-transform: capitalize;
+
+        @include small-mobile {
+            font-size: 18px;
+        }
+        
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__icon {
+        width: 90px;
+
+        @include small-mobile {
+            width: 70px;
+        }
+    }
+
+    &__temperature {
+        position: relative;
+        margin: -15px 0 10px 0;
+        color: $color-white;
+        font-size: 50px;
+        font-weight: 700;
+        text-shadow: 3px 6px $color-dark;
+        text-align: center;
+
+        @include mobile {
+            margin: 0 0 10px 0;
+            font-size: 40px; 
+        }
+
+        @include small-mobile {
+            font-size: 30px;
+            text-shadow: 3px 3px $color-dark;
+        }
+    }
+}
