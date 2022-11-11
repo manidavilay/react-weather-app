@@ -32,6 +32,18 @@ const Weather = () => {
     }
   }, [weather]);
 
+  useEffect(() => {
+    const getInitialWeather = async (query: string) => {
+      const initialWeatherData: IWeather = await fetchWeather(query, setError);
+      setWeather(initialWeatherData);
+      setIsWeatherFetched(true);
+      setDate(dateBuilder(new Date()));
+      setQuery("");
+    };
+
+    getInitialWeather("paris");
+  }, []);
+
   return (
     <div>
       <Search updateWeather={updateWeather} query={query} setQuery={setQuery} />
