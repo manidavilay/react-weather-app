@@ -66,3 +66,76 @@ export const dateBuilder = (d: Date) => {
 
   return `${day} ${date} ${month} ${year}`;
 };
+
+// Switch app classname depending on the weather conditions
+export const switchWeatherClassName = (weather: string, hour: number) => {
+  const prefix = "weather-page";
+
+  switch (weather) {
+    case "Clouds":
+    case "Squall":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " cloudy";
+      } else {
+        return prefix + " cloudy-night";
+      }
+    case "Rain":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " rainy";
+      } else {
+        return prefix + " rainy-night";
+      }
+    case "Snow":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " snowy";
+      } else {
+        return prefix + " snowy-night";
+      }
+    case "Thunderstorm":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " stormy";
+      } else {
+        return prefix + " stormy-night";
+      }
+    case "Drizzle":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " drizzly";
+      } else {
+        return prefix + " drizzly-night";
+      }
+    case "Clear":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " clear";
+      } else {
+        return prefix + " clear-night";
+      }
+    case "Mist":
+    case "Smoke":
+    case "Haze":
+    case "Fog":
+    case "Ash":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " foggy";
+      } else {
+        return prefix + " foggy-night";
+      }
+    case "Dust":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " dusty";
+      } else {
+        return prefix + " dusty-night";
+      }
+    case "Sand":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " sandy";
+      } else {
+        return prefix + " sandy-night";
+      }
+    case "Tornado":
+      if (hour >= 5 && hour < 19) {
+        return prefix + " tornado";
+      } else {
+        return prefix + " tornado-night";
+      }
+  }
+};

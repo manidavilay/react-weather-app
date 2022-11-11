@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import { fetchWeather } from "../../services/api";
-import { dateBuilder, getLocationTime } from "../../utils/functions";
+import {
+  dateBuilder,
+  getLocationTime,
+  switchWeatherClassName,
+} from "../../utils/functions";
 import { IWeather } from "../../utils/interfaces";
 import Search from "../../components/search/Search";
 import Location from "../../components/location/Location";
 import Current from "../../components/current/Current";
 import Informations from "../../components/informations/Informations";
+import "./Weather.scss";
 
 const Weather = () => {
   const [query, setQuery] = useState<string>("");
@@ -45,17 +50,23 @@ const Weather = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      className={
+        weather
+          ? switchWeatherClassName(weather.weather[0].main, hour)
+          : "weather-page none"
+      }
+    >
       <Search updateWeather={updateWeather} query={query} setQuery={setQuery} />
       {error ? (
-            <p className="text">City not found, please try again</p>
-          ) : (
-            <>
-              <Location isWeatherFetched={isWeatherFetched} weather={weather} />
-              <Current date={date} completeHour={completeHour} />
-              <Informations isWeatherFetched={isWeatherFetched} weather={weather} />
-            </>
-          )}
+        <p className="text">City not found, please try again</p>
+      ) : (
+        <>
+          <Location isWeatherFetched={isWeatherFetched} weather={weather} />
+          <Current date={date} completeHour={completeHour} />
+          <Informations isWeatherFetched={isWeatherFetched} weather={weather} />
+        </>
+      )}
     </div>
   );
 };

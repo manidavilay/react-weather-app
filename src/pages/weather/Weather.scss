@@ -1,0 +1,111 @@
+/* -------------------------------- */
+/*           WEATHER PAGE           *
+/* -------------------------------- */
+
+@import "../../assets/styles/utils/variables.scss";
+
+.weather-page {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+
+  &.cloudy {
+    background-image: url("../../assets/images/cloudy-day.jpg");
+  }
+
+  &.cloudy-night {
+    background-image: url("../../assets/images/cloudy-night.jpg");
+  }
+
+  &.rainy {
+    background-image: url("../../assets/images/rainy-day.jpg");
+  }
+
+  &.rainy-night {
+    background-image: url("../../assets/images/rainy-night.jpg");
+  }
+
+  &.snowy {
+    background-image: url("../../assets/images/snowy-day.jpg");
+  }
+
+  &.snowy-night {
+    background-image: url("../../assets/images/snowy-night.jpg");
+  }
+
+  &.stormy {
+    background-image: url("../../assets/images/stormy-day.jpg");
+  }
+
+  &.stormy-night {
+    background-image: url("../../assets/images/stormy-night.jpg");
+  }
+
+  &.drizzly {
+    background-image: url("../../assets/images/drizzly-day.jpg");
+  }
+
+  &.drizzly-night {
+    background-image: url("../../assets/images/drizzly-night.jpg");
+  }
+
+  &.clear {
+    background-image: url("../../assets/images/clear-day.jpg");
+  }
+
+  &.clear-night {
+    background-image: url("../../assets/images/clear-night.jpg");
+  }
+
+  &.foggy {
+    background-image: url("../../assets/images/misty-day.jpg");
+  }
+
+  &.foggy-night {
+    background-image: url("../../assets/images/misty-night.jpg");
+  }
+
+  &.dusty {
+    background-image: url("../../assets/images/dusty-day.jpg");
+  }
+
+  &.dusty-night {
+    background-image: url("../../assets/images/dusty-night.jpg");
+  }
+
+  &.sandy {
+    background-image: url("../../assets/images/sandy-day.jpg");
+  }
+
+  &.sandy-night {
+    background-image: url("../../assets/images/sandy-night.jpg");
+  }
+
+  &.tornado {
+    background-image: url("../../assets/images/tornado-day.jpg");
+  }
+
+  &.tornado-night {
+    background-image: url("../../assets/images/tornado-night.jpg");
+  }
+  
+  &.none {
+    background-image: url("../../assets/images/none.jpg");
+  }
+
+  &__main {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(
+      to bottom,
+      $color-dark-darker,
+      $color-black-lighter
+    );
+  }
+
+  &__container {
+    width: 85%;
+    margin: auto;
+  }
+}
